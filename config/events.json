@@ -1,0 +1,12 @@
+{
+  "Acquisition": {"relevant": true},
+  "Customer Event": {"relevant": true},
+  "Personnel Change": {"relevant": true},
+  "Financial Event": {"relevant": true},
+  "Open Market Purchase": {"relevant": true},
+  "Open Market Sale": {"relevant": true},
+  "Option Exercise": {"relevant": true},
+  "Shares Withheld for Taxes": {"relevant": false},
+  "Automatic Sale under Rule 10b5-1": {"relevant": false},
+  "Other": {"relevant": false}
+}

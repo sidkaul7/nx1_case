@@ -1,0 +1,2007 @@
+{
+  "results": {
+    "sample-1_00f27dec": {
+      "id": "sample-1_00f27dec",
+      "text": "Apple announced the acquisition of a major AI startup.",
+      "model_output": {
+        "Reasoning": [
+          "Apple acquired a major AI startup, which is an acquisition event.",
+          "The acquisition is of a major AI startup, suggesting it's significant for Apple's future."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-2_9a354dd8": {
+      "id": "sample-2_9a354dd8",
+      "text": "The company signed a new contract with a Fortune 500 customer.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions the company entering into a long-term contract with a major customer, which is significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-3_4a4614b9": {
+      "id": "sample-3_4a4614b9",
+      "text": "Apple's CFO will retire at the end of the quarter.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple's CFO retiring, which affects financial leadership.",
+          "The departure of a CFO is significant as it impacts company strategy."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-4_044148c4": {
+      "id": "sample-4_044148c4",
+      "text": "Apple set the date for its next earnings call.",
+      "model_output": {
+        "Reasoning": [
+          "Apple set the date for its next earnings call, which is a routine administrative event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Financial Event",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-5_71d6caf6": {
+      "id": "sample-5_71d6caf6",
+      "text": "Apple updated its privacy policy.",
+      "model_output": {
+        "Reasoning": [],
+        "Events": []
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-6_8d8426d5": {
+      "id": "sample-6_8d8426d5",
+      "text": "The CEO purchased 10,000 shares of Apple stock on the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO purchased 10,000 shares, which is a significant amount (>10,000 shares).",
+          "This purchase involves company leadership, making it relevant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-7_59dd21ff": {
+      "id": "sample-7_59dd21ff",
+      "text": "A senior executive sold 5,000 shares of Apple stock in an open market transaction.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO purchased 15,000 shares is not present in this text but it was previously discussed as a significant event for relevance consideration.",
+          "Apple sold 5,000 shares of its own stock, which is an open market sale event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-8_dae0fd3b": {
+      "id": "sample-8_dae0fd3b",
+      "text": "An Apple director exercised options to acquire 2,000 shares of common stock.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions the exercise of options for shares, which is an option exercise event.",
+          "An option exercise is a routine administrative event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-9_a6528e80": {
+      "id": "sample-9_a6528e80",
+      "text": "Shares were withheld to cover taxes upon vesting of restricted stock units.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions shares being withheld, which is a shares withheld for taxes event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-10_57150a6e": {
+      "id": "sample-10_57150a6e",
+      "text": "Automatic sale of 3,000 shares under a pre-arranged Rule 10b5-1 trading plan.",
+      "model_output": {
+        "Reasoning": [
+          "The CFO sold shares under a Rule 10b5-1 trading plan, which is an automatic sale event.",
+          "Rule 10b5-1 plans are pre-established trading plans that are not based on material non-public information."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-11_5068161a": {
+      "id": "sample-11_5068161a",
+      "text": "Apple completed the acquisition of a small regional distributor.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple acquired a small regional distributor, which is an acquisition event.",
+          "A small regional distributor is less significant than a major acquisition."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-12_409af2f5": {
+      "id": "sample-12_409af2f5",
+      "text": "Apple announced a partnership with a new cloud services provider.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple entered into a partnership, which is not explicitly listed as an event type in the provided list."
+        ],
+        "Events": []
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-13_387d86f4": {
+      "id": "sample-13_387d86f4",
+      "text": "The VP of Marketing resigned unexpectedly.",
+      "model_output": {
+        "Reasoning": [
+          "The VP of Marketing resigned unexpectedly, which is a personnel change event.",
+          "This is an unusual or unexpected occurrence that affects company leadership."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-14_6c3b1ec6": {
+      "id": "sample-14_6c3b1ec6",
+      "text": "Apple declared a quarterly dividend.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple declaring a quarterly dividend, which is a financial event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Financial Event",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-15_e85b91e0": {
+      "id": "sample-15_e85b91e0",
+      "text": "Apple's CTO purchased 1,000 shares in the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO of Apple purchased shares in the open market, which is an open market purchase event.",
+          "The purchase of 1,000 shares by the CTO is relatively small and may not be significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-16_0aa48f53": {
+      "id": "sample-16_0aa48f53",
+      "text": "A director sold 500 shares to fund a personal expense.",
+      "model_output": {
+        "Reasoning": [
+          "The sale of 500 shares by a director is relatively small and may not be significant.",
+          "This is an open market sale event, which typically involves routine trading activities."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-17_e9bf0125": {
+      "id": "sample-17_e9bf0125",
+      "text": "An executive exercised options and immediately sold the shares.",
+      "model_output": {
+        "Reasoning": [
+          "The executive exercised options, which is an option exercise event.",
+          "The immediate sale of shares after exercising options suggests an automatic sale under a Rule 10b5-1 trading plan."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": true
+          },
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-18_7db48585": {
+      "id": "sample-18_7db48585",
+      "text": "Shares withheld for taxes after vesting of performance shares.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions that the company withheld shares to cover tax obligations on vested RSUs, which is a routine event that occurs with RSU vesting."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-19_8e70e0de": {
+      "id": "sample-19_8e70e0de",
+      "text": "Automatic sale of 1,000 shares under a 10b5-1 plan.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale of 1,000 shares is a small transaction (<1,000 shares) and is for a routine purpose (Rule 10b5-1 trading plan)."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-20_9ebba67e": {
+      "id": "sample-20_9ebba67e",
+      "text": "Apple announced a minor update to its employee handbook.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions an update to Apple's employee handbook, which is a personnel change event, but it's a routine administrative event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-21_979eaa1b": {
+      "id": "sample-21_979eaa1b",
+      "text": "Apple acquired a patent portfolio from a startup.",
+      "model_output": {
+        "Reasoning": [
+          "Apple acquired a patent portfolio, which is an acquisition event.",
+          "A patent portfolio acquisition is significant for a technology company like Apple."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-22_45732d0a": {
+      "id": "sample-22_45732d0a",
+      "text": "Apple signed a supply agreement with a new chip manufacturer.",
+      "model_output": {
+        "Reasoning": [
+          "Apple signed a supply agreement, which is an event related to customer or operational activities."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-23_cc90fa99": {
+      "id": "sample-23_cc90fa99",
+      "text": "The Chief Legal Officer was appointed to the board.",
+      "model_output": {
+        "Reasoning": [
+          "The appointment of a new Chief Legal Officer is significant as it affects company leadership.",
+          "This event may impact the company's strategy in terms of legal matters."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-24_b092d0b8": {
+      "id": "sample-24_b092d0b8",
+      "text": "Apple announced a $5 billion share repurchase program.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple is announcing a $5 billion share repurchase program, which is significant.",
+          "A $5 billion share repurchase program is substantial and impacts company strategy."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-25_6889b598": {
+      "id": "sample-25_6889b598",
+      "text": "The CFO purchased 2,500 shares in the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CFO bought 2,500 shares in an open market transaction, which is an open market purchase event.",
+          "This is a routine administrative event as it involves routine share purchases by a senior executive."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-26_c9eb2dc1": {
+      "id": "sample-26_c9eb2dc1",
+      "text": "A director sold 1,200 shares to diversify holdings.",
+      "model_output": {
+        "Reasoning": [
+          "The director sold 1,200 shares, which is an open market sale event.",
+          "The sale of 1,200 shares by a director is relatively small and may not be significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-27_25c0b0b7": {
+      "id": "sample-27_25c0b0b7",
+      "text": "An executive exercised options and held the shares.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions an option exercise event.",
+          "Option exercises can be significant events, especially if they involve a major number of shares."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-28_8b513e83": {
+      "id": "sample-28_8b513e83",
+      "text": "Shares withheld for taxes on restricted stock vesting.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions shares withheld for taxes, which is a shares withheld for taxes event.",
+          "This is a routine tax withholding event that occurs with RSU vesting."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-29_bb1065b3": {
+      "id": "sample-29_bb1065b3",
+      "text": "Automatic sale of 2,000 shares under a 10b5-1 plan.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale is a significant event as it involves an automated transaction.",
+          "This is a regular scheduled event for Rule 10b5-1 trading plans."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-30_a8748eb0": {
+      "id": "sample-30_a8748eb0",
+      "text": "Apple announced a new recycling initiative.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple's announcement of a new recycling initiative, which is an other event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Other",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-31_c0904d47": {
+      "id": "sample-31_c0904d47",
+      "text": "Apple acquired a small software company.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple acquiring a small software company.",
+          "A small acquisition is less significant than a major one, but it's still an acquisition event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-32_2193c281": {
+      "id": "sample-32_2193c281",
+      "text": "Apple signed a multi-year contract with a major retailer.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple entering into a significant long-term contract, which is a customer event.",
+          "A long-term contract with a major retailer like the one described is significant for an airline's operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-33_671e7a90": {
+      "id": "sample-33_671e7a90",
+      "text": "The COO was promoted to CEO.",
+      "model_output": {
+        "Reasoning": [
+          "The COO promotion is a personnel change event.",
+          "This affects company leadership as the COO takes over the CEO role."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-34_294dcd24": {
+      "id": "sample-34_294dcd24",
+      "text": "Apple announced a secondary public offering.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple's secondary public offering, which is an open market sale event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-35_5dd7e421": {
+      "id": "sample-35_5dd7e421",
+      "text": "The CEO purchased 3,000 shares in the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO purchased 3,000 shares, which is an open market purchase event.",
+          "The purchase of 3,000 shares is a small transaction (<10,000 shares) and does not involve company leadership directly but is still an open market transaction."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-36_d4e8648d": {
+      "id": "sample-36_d4e8648d",
+      "text": "A director sold 800 shares for estate planning.",
+      "model_output": {
+        "Reasoning": [
+          "The director sold shares, which is an open market sale event.",
+          "The sale of 800 shares is a small transaction (<1,000 shares) and is for personal reasons, making it not significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-37_57886eba": {
+      "id": "sample-37_57886eba",
+      "text": "An executive exercised options and sold half the shares.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions an executive exercising options, which is an option exercise event.",
+          "The sale of half the shares by an executive is a significant transaction (>50% of shares) involving company leadership, making it relevant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": true
+          },
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-38_2d4444c9": {
+      "id": "sample-38_2d4444c9",
+      "text": "Shares withheld for taxes on bonus share vesting.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions shares withheld for taxes, which is a routine event related to tax obligations on vested RSUs."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-39_e0ba1f7b": {
+      "id": "sample-39_e0ba1f7b",
+      "text": "Automatic sale of 1,500 shares under a 10b5-1 plan.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale of 1,500 shares under a Rule 10b5-1 trading plan is an automatic sale event.",
+          "This transaction is not based on material non-public information and follows a pre-established plan."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-40_dcbcd468": {
+      "id": "sample-40_dcbcd468",
+      "text": "Apple announced a new employee wellness program.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple announcing a new employee wellness program, which is not significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-41_076a4949": {
+      "id": "sample-41_076a4949",
+      "text": "Apple acquired a controlling stake in a European tech firm.",
+      "model_output": {
+        "Reasoning": [
+          "Apple acquired a controlling stake in a European tech firm, which is an acquisition event.",
+          "A controlling stake is significant as it indicates Apple's intent to shape the company's direction."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-42_3f3580e2": {
+      "id": "sample-42_3f3580e2",
+      "text": "Apple signed a contract with a government agency.",
+      "model_output": {
+        "Reasoning": [
+          "Apple entered into a contract with a government agency, which is a customer event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-43_d5b3fd43": {
+      "id": "sample-43_d5b3fd43",
+      "text": "The Chief Technology Officer resigned.",
+      "model_output": {
+        "Reasoning": [
+          "The CTO resignation is a personnel change event.",
+          "This departure may have an impact on the company's strategy and operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-44_e96bd9d3": {
+      "id": "sample-44_e96bd9d3",
+      "text": "Apple announced a debt offering.",
+      "model_output": {
+        "Reasoning": [
+          "A debt offering is typically an issue of new debt securities, which can be significant for a company's capital structure."
+        ],
+        "Events": [
+          {
+            "Event Type": "Financial Event",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-45_24da795f": {
+      "id": "sample-45_24da795f",
+      "text": "The CEO purchased 5,000 shares in the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO purchased 5,000 shares, which is an open market purchase event.",
+          "The purchase of 5,000 shares is a relatively small transaction (<10,000 shares) and does not involve company leadership, making it not significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-46_08d3f89a": {
+      "id": "sample-46_08d3f89a",
+      "text": "A director sold 2,000 shares to pay for college tuition.",
+      "model_output": {
+        "Reasoning": [
+          "The sale of 2,000 shares is a relatively small transaction (<1,000 shares) and is for personal reasons, making it not significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-47_e90bd6a2": {
+      "id": "sample-47_e90bd6a2",
+      "text": "An executive exercised options and donated the shares to charity.",
+      "model_output": {
+        "Reasoning": [
+          "An executive exercised options, which is an option exercise event.",
+          "The donation of shares to charity might be unusual or unexpected for a company, making it relevant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": true
+          },
+          {
+            "Event Type": "Other",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-48_427cc04d": {
+      "id": "sample-48_427cc04d",
+      "text": "Shares withheld for taxes on executive compensation.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions shares withheld for taxes on executive compensation, which is a shares withheld for taxes event.",
+          "This is a routine administrative event that occurs with tax withholding."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-49_c5d3389e": {
+      "id": "sample-49_c5d3389e",
+      "text": "Automatic sale of 4,000 shares under a 10b5-1 plan.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale of 4,000 shares under a Rule 10b5-1 trading plan is an automatic sale event.",
+          "Rule 10b5-1 plans are pre-established trading plans that are not based on material non-public information."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-50_5171a37f": {
+      "id": "sample-50_5171a37f",
+      "text": "Apple announced a new sustainability report.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Apple's new sustainability report, which is an Other event.",
+          "This is not a significant or unusual occurrence for the company."
+        ],
+        "Events": [
+          {
+            "Event Type": "Other",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-51_3809d346": {
+      "id": "sample-51_3809d346",
+      "text": "Tesla completed the acquisition of a battery technology startup.",
+      "model_output": {
+        "Reasoning": [
+          "Tesla acquired a battery technology startup, which is an acquisition event.",
+          "The acquisition is significant for Tesla's future in the electric vehicle industry."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-52_bc4a74f0": {
+      "id": "sample-52_bc4a74f0",
+      "text": "Microsoft signed a multi-year contract with the U.S. Department of Defense.",
+      "model_output": {
+        "Reasoning": [
+          "Microsoft entered into a significant contract with the U.S. Department of Defense, which is a customer event.",
+          "A long-term contract like this is significant for a company's operations and growth."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-53_cad7b802": {
+      "id": "sample-53_cad7b802",
+      "text": "The CFO of Google announced his retirement effective next quarter.",
+      "model_output": {
+        "Reasoning": [
+          "The CFO of Google is retiring, which affects financial leadership.",
+          "A CFO's departure can impact a company's financial strategy and operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-54_2359c410": {
+      "id": "sample-54_2359c410",
+      "text": "Amazon reported record quarterly earnings and announced a special dividend.",
+      "model_output": {
+        "Reasoning": [
+          "Amazon reported record quarterly earnings, which is a financial event.",
+          "Record quarterly earnings are significant as they affect the company's financial performance."
+        ],
+        "Events": [
+          {
+            "Event Type": "Financial Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-55_c87cd75e": {
+      "id": "sample-55_c87cd75e",
+      "text": "The CEO of Meta purchased 15,000 shares of company stock on the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO purchased 15,000 shares, which is an open market purchase event.",
+          "The purchase of 15,000 shares is a significant amount (>10,000 shares) and involves company leadership, making it relevant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-56_ac66cc2b": {
+      "id": "sample-56_ac66cc2b",
+      "text": "A director at Netflix sold 2,500 shares in an open market transaction.",
+      "model_output": {
+        "Reasoning": [
+          "A director at Netflix sold 2,500 shares, which is an open market sale event.",
+          "The sale of 2,500 shares by a director is relatively small (<1,000 shares) and may not be significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-57_acb93d2e": {
+      "id": "sample-57_acb93d2e",
+      "text": "A Salesforce executive exercised options to acquire 5,000 shares of common stock.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions a Salesforce executive exercising options, which is an option exercise event.",
+          "An option exercise involves the acquisition of company shares by an employee or executive, making it relevant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-58_e9039206": {
+      "id": "sample-58_e9039206",
+      "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at Intel.",
+      "model_output": {
+        "Reasoning": [
+          "The company withheld shares to cover tax obligations on vested RSUs, which is a shares withheld for taxes event.",
+          "This is a routine tax withholding event that occurs with RSU vesting."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-59_b6822906": {
+      "id": "sample-59_b6822906",
+      "text": "Automatic sale of 1,200 shares under a pre-arranged Rule 10b5-1 trading plan at IBM.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale of shares under a Rule 10b5-1 plan is an automatic sale event.",
+          "Rule 10b5-1 plans are pre-established trading plans that are not based on material non-public information, indicating it's a routine transaction."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-60_478541e2": {
+      "id": "sample-60_478541e2",
+      "text": "Alphabet announced a new environmental sustainability initiative.",
+      "model_output": {
+        "Reasoning": [
+          "Alphabet announced an environmental sustainability initiative, which is an Other event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Other",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-61_6c1cf3bb": {
+      "id": "sample-61_6c1cf3bb",
+      "text": "Coca-Cola acquired a minority stake in a beverage startup.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions Coca-Cola acquiring a minority stake in a beverage startup, which is significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-62_ffe800f1": {
+      "id": "sample-62_ffe800f1",
+      "text": "Delta Airlines signed a long-term contract with Boeing for new aircraft.",
+      "model_output": {
+        "Reasoning": [
+          "Delta Airlines entered into a significant contract with Boeing, which is a customer event.",
+          "A long-term aircraft contract is significant for an airline's operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-63_2cea2d5e": {
+      "id": "sample-63_2cea2d5e",
+      "text": "The CFO of Johnson & Johnson announced her retirement.",
+      "model_output": {
+        "Reasoning": [
+          "Johnson & Johnson's CFO is retiring, which affects financial leadership."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-64_01e96ea0": {
+      "id": "sample-64_01e96ea0",
+      "text": "ExxonMobil reported a quarterly loss due to falling oil prices.",
+      "model_output": {
+        "Reasoning": [
+          "ExxonMobil reported a quarterly loss, which is a financial event.",
+          "A quarterly loss is significant as it affects the company's financial performance."
+        ],
+        "Events": [
+          {
+            "Event Type": "Financial Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-65_902c1984": {
+      "id": "sample-65_902c1984",
+      "text": "The CEO of Procter & Gamble purchased 8,000 shares on the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO of Procter & Gamble purchased 8,000 shares, which is an open market purchase event.",
+          "The purchase of 8,000 shares by the CEO is a significant amount (>10,000 shares) and involves company leadership, making it relevant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-66_c63e0349": {
+      "id": "sample-66_c63e0349",
+      "text": "A director at Ford sold 1,500 shares in an open market transaction.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions a director selling shares in an open market transaction, which is an open market sale event.",
+          "The sale of 1,500 shares by a director is relatively small and may not be significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-67_dd8b3f50": {
+      "id": "sample-67_dd8b3f50",
+      "text": "A Pfizer executive exercised options to acquire 3,000 shares of common stock.",
+      "model_output": {
+        "Reasoning": [
+          "A Pfizer executive exercised options to acquire shares, which is an option exercise event.",
+          "The acquisition of 3,000 shares by a single individual may not be significant for the company."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-68_9a54d144": {
+      "id": "sample-68_9a54d144",
+      "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at UnitedHealth Group.",
+      "model_output": {
+        "Reasoning": [
+          "The company withheld shares to cover tax obligations on vested RSUs, which is a shares withheld for taxes event.",
+          "This is a routine tax withholding event that occurs with RSU vesting."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-69_c9166986": {
+      "id": "sample-69_c9166986",
+      "text": "Automatic sale of 2,000 shares under a pre-arranged Rule 10b5-1 trading plan at Caterpillar.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale of 2,000 shares is an automatic sale event due to the use of Rule 10b5-1."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-70_c57d91a1": {
+      "id": "sample-70_c57d91a1",
+      "text": "Walmart announced a new sustainability initiative for its supply chain.",
+      "model_output": {
+        "Reasoning": [
+          "The announcement of a new sustainability initiative is significant as it impacts company operations and strategy."
+        ],
+        "Events": [
+          {
+            "Event Type": "Other",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-71_a3d93746": {
+      "id": "sample-71_a3d93746",
+      "text": "JPMorgan Chase acquired a regional bank in the Midwest.",
+      "model_output": {
+        "Reasoning": [
+          "The text mentions JPMorgan Chase acquiring a regional bank, which is an acquisition event.",
+          "Acquiring a regional bank in the Midwest is significant for JPMorgan's expansion and growth."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-72_5180d4a0": {
+      "id": "sample-72_5180d4a0",
+      "text": "Southwest Airlines signed a contract with GE Aviation for engine maintenance.",
+      "model_output": {
+        "Reasoning": [
+          "Southwest Airlines signed a long-term contract with GE Aviation, which is a customer event.",
+          "A long-term aircraft contract is significant for an airline's operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-73_be6b1b23": {
+      "id": "sample-73_be6b1b23",
+      "text": "The COO of General Electric announced his resignation.",
+      "model_output": {
+        "Reasoning": [
+          "The COO of General Electric is resigning, which affects company leadership.",
+          "A CEO resignation is significant as it impacts the company's operational leadership."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-74_c1cc6c00": {
+      "id": "sample-74_c1cc6c00",
+      "text": "Chevron announced a quarterly dividend increase.",
+      "model_output": {
+        "Reasoning": [
+          "Chevron announced a quarterly dividend increase, which is a financial event.",
+          "A quarterly dividend increase is significant as it affects the company's revenue streams."
+        ],
+        "Events": [
+          {
+            "Event Type": "Financial Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-75_782229e3": {
+      "id": "sample-75_782229e3",
+      "text": "The CEO of Target purchased 5,000 shares on the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO of Target purchased 5,000 shares, which is an open market purchase event.",
+          "The purchase of 5,000 shares by the CEO is significant as it involves company leadership."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-76_4b9cfa7f": {
+      "id": "sample-76_4b9cfa7f",
+      "text": "A director at Union Pacific sold 2,200 shares in an open market transaction.",
+      "model_output": {
+        "Reasoning": [
+          "The director sold 2,200 shares, which is an open market sale event.",
+          "The sale of 2,200 shares by a director is relatively small and may not be significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-77_bcfd6bee": {
+      "id": "sample-77_bcfd6bee",
+      "text": "A Merck executive exercised options to acquire 4,000 shares of common stock.",
+      "model_output": {
+        "Reasoning": [
+          "Merck exercised options for 4,000 shares, which is an option exercise event.",
+          "The number of shares (4,000) and the fact that it's an option exercise by a Merck executive are significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-78_f4119a95": {
+      "id": "sample-78_f4119a95",
+      "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at CVS Health.",
+      "model_output": {
+        "Reasoning": [
+          "The company withheld shares to cover tax obligations on vested RSUs, which is a shares withheld for taxes event.",
+          "This is a routine tax withholding event that occurs with RSU vesting."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-79_afa2be26": {
+      "id": "sample-79_afa2be26",
+      "text": "Automatic sale of 1,800 shares under a pre-arranged Rule 10b5-1 trading plan at Deere & Company.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale is part of a pre-arranged trading plan, which is not based on material non-public information.",
+          "A pre-arranged trading plan suggests this is a routine event for the company."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-80_9583bb75": {
+      "id": "sample-80_9583bb75",
+      "text": "McDonald's announced a new global recycling program.",
+      "model_output": {
+        "Reasoning": [
+          "McDonald's announced a new global recycling program, which is an other event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Other",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-81_e3d21a7e": {
+      "id": "sample-81_e3d21a7e",
+      "text": "Bank of America acquired a fintech startup specializing in mobile payments.",
+      "model_output": {
+        "Reasoning": [
+          "Bank of America acquired a fintech startup, which is an acquisition event.",
+          "The acquisition of a mobile payments startup is significant for Bank of America's future operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-82_471b4eac": {
+      "id": "sample-82_471b4eac",
+      "text": "FedEx signed a logistics contract with a major e-commerce retailer.",
+      "model_output": {
+        "Reasoning": [
+          "FedEx entered into a significant contract with a major e-commerce retailer, which is a customer event.",
+          "A long-term logistics contract with an e-commerce retailer is significant for FedEx's operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-83_1e66b3c0": {
+      "id": "sample-83_1e66b3c0",
+      "text": "The Chief Marketing Officer of PepsiCo retired after 20 years.",
+      "model_output": {
+        "Reasoning": [
+          "The CMO retired after 20 years, which is a personnel change event.",
+          "A long tenure like 20 years for the CMO position is significant and affects company leadership."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-84_5d58a329": {
+      "id": "sample-84_5d58a329",
+      "text": "ConocoPhillips reported a significant increase in quarterly profits.",
+      "model_output": {
+        "Reasoning": [
+          "ConocoPhillips reported an increase in quarterly profits, which is a financial event.",
+          "A significant increase in quarterly profits is typically a material occurrence and affects the company's financial performance."
+        ],
+        "Events": [
+          {
+            "Event Type": "Financial Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-85_d1e764da": {
+      "id": "sample-85_d1e764da",
+      "text": "The CEO of Lowe's purchased 2,000 shares on the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO of Lowe's purchased 2,000 shares, which is an open market purchase event.",
+          "The purchase of 2,000 shares by the CEO may be considered significant for a retail company like Lowe's."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-86_eb4aae15": {
+      "id": "sample-86_eb4aae15",
+      "text": "A director at Norfolk Southern sold 1,000 shares in an open market transaction.",
+      "model_output": {
+        "Reasoning": [
+          "The sale of 1,000 shares by a director is relatively small and may not be significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-87_8c79f5ed": {
+      "id": "sample-87_8c79f5ed",
+      "text": "A Bristol Myers Squibb executive exercised options to acquire 2,500 shares of common stock.",
+      "model_output": {
+        "Reasoning": [
+          "The exercise of options is a personnel change event.",
+          "The acquisition of 2,500 shares involves significant amounts (>1,000 shares) and affects company leadership."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          },
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-88_ddbca4b8": {
+      "id": "sample-88_ddbca4b8",
+      "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at Walgreens Boots Alliance.",
+      "model_output": {
+        "Reasoning": [
+          "The company withheld shares to cover tax obligations on vested RSUs, which is a shares withheld for taxes event.",
+          "This is a routine tax withholding event that occurs with RSU vesting."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-89_ccca90f8": {
+      "id": "sample-89_ccca90f8",
+      "text": "Automatic sale of 2,500 shares under a pre-arranged Rule 10b5-1 trading plan at Honeywell.",
+      "model_output": {
+        "Reasoning": [
+          "The automatic sale of 2,500 shares under a pre-arranged Rule 10b5-1 trading plan is an automatic sale event.",
+          "This is a routine transaction that occurs with the pre-established trading plan, and its amount ($6.25 per share) is not significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-90_d87b5a70": {
+      "id": "sample-90_d87b5a70",
+      "text": "The Home Depot announced a new employee wellness program.",
+      "model_output": {
+        "Reasoning": [
+          "The Home Depot announced a new employee wellness program, which is an other event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Other",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-91_42fac3a9": {
+      "id": "sample-91_42fac3a9",
+      "text": "Morgan Stanley acquired a wealth management firm in California.",
+      "model_output": {
+        "Reasoning": [
+          "Morgan Stanley acquired a wealth management firm, which is an acquisition event.",
+          "The acquisition of a wealth management firm is significant as it expands Morgan Stanley's services."
+        ],
+        "Events": [
+          {
+            "Event Type": "Acquisition",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Acquisition",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-92_cd11fb3d": {
+      "id": "sample-92_cd11fb3d",
+      "text": "American Airlines signed a partnership agreement with Hyatt Hotels.",
+      "model_output": {
+        "Reasoning": [
+          "American Airlines entered into a significant contract with Hyatt Hotels, which is a customer event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Customer Event",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Customer Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-93_15d5e21e": {
+      "id": "sample-93_15d5e21e",
+      "text": "The Chief Risk Officer of Wells Fargo resigned.",
+      "model_output": {
+        "Reasoning": [
+          "Wells Fargo's CFO is resigning, which affects financial leadership.",
+          "The resignation of a CFO is significant as it impacts the company's financial operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Personnel Change",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Personnel Change",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-94_042eb649": {
+      "id": "sample-94_042eb649",
+      "text": "Marathon Petroleum announced a special dividend for shareholders.",
+      "model_output": {
+        "Reasoning": [
+          "Marathon Petroleum is announcing a special dividend, which is an open market purchase event.",
+          "A special dividend is a payment to shareholders and is significant as it affects company operations."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Financial Event",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-95_30a05993": {
+      "id": "sample-95_30a05993",
+      "text": "The CEO of CVS Health purchased 4,000 shares on the open market.",
+      "model_output": {
+        "Reasoning": [
+          "The CEO of CVS Health purchased 4,000 shares in an open market transaction, which is an open market purchase event.",
+          "A purchase of 4,000 shares by the CEO is a moderate amount (>1,000 shares) but not significant enough to be considered relevant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Purchase",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Purchase",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-96_282634be": {
+      "id": "sample-96_282634be",
+      "text": "A director at Southwest Gas sold 1,300 shares in an open market transaction.",
+      "model_output": {
+        "Reasoning": [
+          "The sale of 1,300 shares by a director is relatively small and may not be significant."
+        ],
+        "Events": [
+          {
+            "Event Type": "Open Market Sale",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Open Market Sale",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-97_e3358807": {
+      "id": "sample-97_e3358807",
+      "text": "A Regeneron executive exercised options to acquire 1,800 shares of common stock.",
+      "model_output": {
+        "Reasoning": [
+          "Regeneron exercised options for 1,800 shares, which is an option exercise event.",
+          "The exercise of options by a Regeneron executive is not significant due to the small amount (<10,000 shares)."
+        ],
+        "Events": [
+          {
+            "Event Type": "Option Exercise",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Option Exercise",
+      "expected_relevance": true,
+      "validation": true
+    },
+    "sample-98_9f7cbf5d": {
+      "id": "sample-98_9f7cbf5d",
+      "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at Cigna.",
+      "model_output": {
+        "Reasoning": [
+          "The company withheld shares to cover tax obligations on vested RSUs, which is a shares withheld for taxes event.",
+          "This is a routine tax withholding event that occurs with RSU vesting."
+        ],
+        "Events": [
+          {
+            "Event Type": "Shares Withheld for Taxes",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Shares Withheld for Taxes",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-99_27d034e0": {
+      "id": "sample-99_27d034e0",
+      "text": "Automatic sale of 1,600 shares under a pre-arranged Rule 10b5-1 trading plan at 3M.",
+      "model_output": {
+        "Reasoning": [
+          "The CFO sold shares under a Rule 10b5-1 trading plan, which is an automatic sale event.",
+          "Rule 10b5-1 plans are pre-established trading plans that are not based on material non-public information."
+        ],
+        "Events": [
+          {
+            "Event Type": "Automatic Sale under Rule 10b5-1",
+            "Relevant": false
+          }
+        ]
+      },
+      "expected_event": "Automatic Sale under Rule 10b5-1",
+      "expected_relevance": false,
+      "validation": true
+    },
+    "sample-100_a21a77dd": {
+      "id": "sample-100_a21a77dd",
+      "text": "Costco announced a new global food safety initiative.",
+      "model_output": {
+        "Reasoning": [
+          "Costco announced a new global food safety initiative, which is an other event."
+        ],
+        "Events": [
+          {
+            "Event Type": "Other",
+            "Relevant": true
+          }
+        ]
+      },
+      "expected_event": "Other",
+      "expected_relevance": false,
+      "validation": true
+    }
+  },
+  "metrics": {
+    "total": 100,
+    "event_accuracy": 0.92,
+    "relevance_accuracy": 0.84,
+    "confusion_matrix": {
+      "Acquisition": {
+        "Acquisition": 10,
+        "Customer Event": 0,
+        "Personnel Change": 0,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 0,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Customer Event": {
+        "Acquisition": 0,
+        "Customer Event": 9,
+        "Personnel Change": 0,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 0,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Personnel Change": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 10,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 0,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Financial Event": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 0,
+        "Financial Event": 7,
+        "Open Market Purchase": 2,
+        "Open Market Sale": 1,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Open Market Purchase": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 0,
+        "Financial Event": 0,
+        "Open Market Purchase": 10,
+        "Open Market Sale": 0,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Open Market Sale": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 0,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 10,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Option Exercise": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 1,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 0,
+        "Option Exercise": 9,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Shares Withheld for Taxes": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 0,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 0,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 10,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 0
+      },
+      "Automatic Sale under Rule 10b5-1": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 0,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 0,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 10,
+        "Other": 0
+      },
+      "Other": {
+        "Acquisition": 0,
+        "Customer Event": 0,
+        "Personnel Change": 2,
+        "Financial Event": 0,
+        "Open Market Purchase": 0,
+        "Open Market Sale": 0,
+        "Option Exercise": 0,
+        "Shares Withheld for Taxes": 0,
+        "Automatic Sale under Rule 10b5-1": 0,
+        "Other": 7
+      }
+    }
+  }
+}

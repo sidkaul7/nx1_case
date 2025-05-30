@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+venv/
+.env
+
+# VSCode/IDE
+.vscode/
+.idea/
+
+# Test/pytest
+.pytest_cache/
+
+# Node.js
+ui/node_modules/
+ui/.env
+
+# Data/output
+data/filings/*
+!data/filings/.gitkeep
+data/filings.db
+
+# MacOS
+.DS_Store 

@@ -1,0 +1,602 @@
+[
+  {
+    "filing_id": "sample-1",
+    "text": "Apple announced the acquisition of a major AI startup.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-2",
+    "text": "The company signed a new contract with a Fortune 500 customer.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-3",
+    "text": "Apple's CFO will retire at the end of the quarter.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-4",
+    "text": "Apple set the date for its next earnings call.",
+    "expected_event": "Financial Event",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-5",
+    "text": "Apple updated its privacy policy.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-6",
+    "text": "The CEO purchased 10,000 shares of Apple stock on the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-7",
+    "text": "A senior executive sold 5,000 shares of Apple stock in an open market transaction.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-8",
+    "text": "An Apple director exercised options to acquire 2,000 shares of common stock.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-9",
+    "text": "Shares were withheld to cover taxes upon vesting of restricted stock units.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-10",
+    "text": "Automatic sale of 3,000 shares under a pre-arranged Rule 10b5-1 trading plan.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-11",
+    "text": "Apple completed the acquisition of a small regional distributor.",
+    "expected_event": "Acquisition",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-12",
+    "text": "Apple announced a partnership with a new cloud services provider.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-13",
+    "text": "The VP of Marketing resigned unexpectedly.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-14",
+    "text": "Apple declared a quarterly dividend.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-15",
+    "text": "Apple's CTO purchased 1,000 shares in the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-16",
+    "text": "A director sold 500 shares to fund a personal expense.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-17",
+    "text": "An executive exercised options and immediately sold the shares.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-18",
+    "text": "Shares withheld for taxes after vesting of performance shares.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-19",
+    "text": "Automatic sale of 1,000 shares under a 10b5-1 plan.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-20",
+    "text": "Apple announced a minor update to its employee handbook.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-21",
+    "text": "Apple acquired a patent portfolio from a startup.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-22",
+    "text": "Apple signed a supply agreement with a new chip manufacturer.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-23",
+    "text": "The Chief Legal Officer was appointed to the board.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-24",
+    "text": "Apple announced a $5 billion share repurchase program.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-25",
+    "text": "The CFO purchased 2,500 shares in the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-26",
+    "text": "A director sold 1,200 shares to diversify holdings.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-27",
+    "text": "An executive exercised options and held the shares.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-28",
+    "text": "Shares withheld for taxes on restricted stock vesting.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-29",
+    "text": "Automatic sale of 2,000 shares under a 10b5-1 plan.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-30",
+    "text": "Apple announced a new recycling initiative.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-31",
+    "text": "Apple acquired a small software company.",
+    "expected_event": "Acquisition",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-32",
+    "text": "Apple signed a multi-year contract with a major retailer.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-33",
+    "text": "The COO was promoted to CEO.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-34",
+    "text": "Apple announced a secondary public offering.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-35",
+    "text": "The CEO purchased 3,000 shares in the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-36",
+    "text": "A director sold 800 shares for estate planning.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-37",
+    "text": "An executive exercised options and sold half the shares.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-38",
+    "text": "Shares withheld for taxes on bonus share vesting.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-39",
+    "text": "Automatic sale of 1,500 shares under a 10b5-1 plan.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-40",
+    "text": "Apple announced a new employee wellness program.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-41",
+    "text": "Apple acquired a controlling stake in a European tech firm.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-42",
+    "text": "Apple signed a contract with a government agency.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-43",
+    "text": "The Chief Technology Officer resigned.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-44",
+    "text": "Apple announced a debt offering.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-45",
+    "text": "The CEO purchased 5,000 shares in the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-46",
+    "text": "A director sold 2,000 shares to pay for college tuition.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-47",
+    "text": "An executive exercised options and donated the shares to charity.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-48",
+    "text": "Shares withheld for taxes on executive compensation.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-49",
+    "text": "Automatic sale of 4,000 shares under a 10b5-1 plan.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-50",
+    "text": "Apple announced a new sustainability report.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-51",
+    "text": "Tesla completed the acquisition of a battery technology startup.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-52",
+    "text": "Microsoft signed a multi-year contract with the U.S. Department of Defense.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-53",
+    "text": "The CFO of Google announced his retirement effective next quarter.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-54",
+    "text": "Amazon reported record quarterly earnings and announced a special dividend.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-55",
+    "text": "The CEO of Meta purchased 15,000 shares of company stock on the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-56",
+    "text": "A director at Netflix sold 2,500 shares in an open market transaction.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-57",
+    "text": "A Salesforce executive exercised options to acquire 5,000 shares of common stock.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-58",
+    "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at Intel.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-59",
+    "text": "Automatic sale of 1,200 shares under a pre-arranged Rule 10b5-1 trading plan at IBM.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-60",
+    "text": "Alphabet announced a new environmental sustainability initiative.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-61",
+    "text": "Coca-Cola acquired a minority stake in a beverage startup.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-62",
+    "text": "Delta Airlines signed a long-term contract with Boeing for new aircraft.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-63",
+    "text": "The CFO of Johnson & Johnson announced her retirement.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-64",
+    "text": "ExxonMobil reported a quarterly loss due to falling oil prices.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-65",
+    "text": "The CEO of Procter & Gamble purchased 8,000 shares on the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-66",
+    "text": "A director at Ford sold 1,500 shares in an open market transaction.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-67",
+    "text": "A Pfizer executive exercised options to acquire 3,000 shares of common stock.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-68",
+    "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at UnitedHealth Group.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-69",
+    "text": "Automatic sale of 2,000 shares under a pre-arranged Rule 10b5-1 trading plan at Caterpillar.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-70",
+    "text": "Walmart announced a new sustainability initiative for its supply chain.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-71",
+    "text": "JPMorgan Chase acquired a regional bank in the Midwest.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-72",
+    "text": "Southwest Airlines signed a contract with GE Aviation for engine maintenance.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-73",
+    "text": "The COO of General Electric announced his resignation.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-74",
+    "text": "Chevron announced a quarterly dividend increase.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-75",
+    "text": "The CEO of Target purchased 5,000 shares on the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-76",
+    "text": "A director at Union Pacific sold 2,200 shares in an open market transaction.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-77",
+    "text": "A Merck executive exercised options to acquire 4,000 shares of common stock.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-78",
+    "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at CVS Health.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-79",
+    "text": "Automatic sale of 1,800 shares under a pre-arranged Rule 10b5-1 trading plan at Deere & Company.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-80",
+    "text": "McDonald's announced a new global recycling program.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-81",
+    "text": "Bank of America acquired a fintech startup specializing in mobile payments.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-82",
+    "text": "FedEx signed a logistics contract with a major e-commerce retailer.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-83",
+    "text": "The Chief Marketing Officer of PepsiCo retired after 20 years.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-84",
+    "text": "ConocoPhillips reported a significant increase in quarterly profits.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-85",
+    "text": "The CEO of Lowe's purchased 2,000 shares on the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-86",
+    "text": "A director at Norfolk Southern sold 1,000 shares in an open market transaction.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-87",
+    "text": "A Bristol Myers Squibb executive exercised options to acquire 2,500 shares of common stock.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-88",
+    "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at Walgreens Boots Alliance.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-89",
+    "text": "Automatic sale of 2,500 shares under a pre-arranged Rule 10b5-1 trading plan at Honeywell.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-90",
+    "text": "The Home Depot announced a new employee wellness program.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-91",
+    "text": "Morgan Stanley acquired a wealth management firm in California.",
+    "expected_event": "Acquisition",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-92",
+    "text": "American Airlines signed a partnership agreement with Hyatt Hotels.",
+    "expected_event": "Customer Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-93",
+    "text": "The Chief Risk Officer of Wells Fargo resigned.",
+    "expected_event": "Personnel Change",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-94",
+    "text": "Marathon Petroleum announced a special dividend for shareholders.",
+    "expected_event": "Financial Event",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-95",
+    "text": "The CEO of CVS Health purchased 4,000 shares on the open market.",
+    "expected_event": "Open Market Purchase",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-96",
+    "text": "A director at Southwest Gas sold 1,300 shares in an open market transaction.",
+    "expected_event": "Open Market Sale",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-97",
+    "text": "A Regeneron executive exercised options to acquire 1,800 shares of common stock.",
+    "expected_event": "Option Exercise",
+    "expected_relevance": true
+  },
+  {
+    "filing_id": "sample-98",
+    "text": "Shares were withheld to cover taxes upon vesting of restricted stock units at Cigna.",
+    "expected_event": "Shares Withheld for Taxes",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-99",
+    "text": "Automatic sale of 1,600 shares under a pre-arranged Rule 10b5-1 trading plan at 3M.",
+    "expected_event": "Automatic Sale under Rule 10b5-1",
+    "expected_relevance": false
+  },
+  {
+    "filing_id": "sample-100",
+    "text": "Costco announced a new global food safety initiative.",
+    "expected_event": "Other",
+    "expected_relevance": false
+  }
+] 
