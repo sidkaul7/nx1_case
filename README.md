@@ -386,4 +386,39 @@ To further improve the accuracy and robustness of event type and relevance class
     {"Event Type": "Open Market Sale", "Relevant": false}
   ]
 }
-``` 
+```
+
+## Running the Application
+
+1. Start the backend API server:
+```bash
+uvicorn api.main:app --reload
+```
+
+2. In a new terminal, start the frontend development server:
+```bash
+cd frontend
+npm install
+npm start
+```
+
+3. Open your browser and navigate to `http://localhost:5173`
+
+## Command Line Usage
+
+You can also run the classification system directly from the command line. When running Python commands, make sure to use `PYTHONPATH=.` before the command to ensure proper module imports:
+
+```bash
+# Ground truth evaluation
+PYTHONPATH=. python orchestrator.py --ground-truth --template [zero_shot.tpl or cot.tpl]
+
+# Single filing classification
+PYTHONPATH=. python orchestrator.py --url [URL] --template [zero_shot.tpl or cot.tpl]
+
+# Batch processing
+PYTHONPATH=. python orchestrator.py --batch [FILE] --template [zero_shot.tpl or cot.tpl]
+```
+
+Note: The `--template` argument is optional and defaults to 'zero_shot.tpl'. Available templates are:
+- `zero_shot.tpl`: Direct classification without reasoning
+- `cot.tpl`: Chain-of-thought classification with detailed reasoning
