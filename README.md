@@ -191,7 +191,7 @@ After observing that the model often failed to identify clear events (such as 'A
 
 #### Further Refinement with Diverse Few-Shot Examples
 
-To further improve the model's generalization and robustness, I added additional few-shot examples to both the Chain-of-Thought (CoT) and zero-shot prompt templates. These new examples use company names and scenarios from a wide range of industries—including technology companies (e.g., Apple, Google, Microsoft), consumer, industrials, healthcare, energy, financials, retail, and transportation (e.g., Coca-Cola, Delta Airlines, Johnson & Johnson, ExxonMobil, Ford, JPMorgan Chase, McDonald's, Merck, FedEx, etc.)—and cover all event types. The ground truth set was also expanded to 100 examples with similar diversity. This refinement led to:
+To further improve the model's generalization and robustness, I added additional few-shot examples to the Chain-of-Thought (CoT) prompt template. These examples use company names and scenarios from a wide range of industries—including technology companies (e.g., Apple, Google, Microsoft), consumer, industrials, healthcare, energy, financials, retail, and transportation (e.g., Coca-Cola, Delta Airlines, Johnson & Johnson, ExxonMobil, Ford, JPMorgan Chase, McDonald's, Merck, FedEx, etc.)—and cover all event types. The ground truth set was also expanded to 100 examples with similar diversity. This refinement led to:
 
 - Improved performance on tech, non-tech, and non-Apple filings
 - Better generalization to real-world SEC disclosures across industries
